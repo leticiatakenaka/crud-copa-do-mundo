@@ -1,0 +1,11 @@
+﻿@model Exception
+
+@{
+    ViewBag.Title = "Erro";
+}
+<h1 class="text-danger">Erro</h1>
+<h2 class="text-danger">Esse país já existe, digite um novo país.</h2>
+@if (Model != null)
+{
+    @Html.ValueFor(model => model.Message)
+}
